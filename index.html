@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Portfólio</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Lora', serif; /* Aplica a fonte Lora em todo o corpo */
+        }
+
+        /* Estilos para o vídeo de fundo */
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  /* Faz o vídeo cobrir toda a tela */
+            object-position: center center; /* Posiciona o vídeo no centro para evitar cortar */
+            transform: translate(-50%, -50%); /* Centraliza o vídeo */
+            z-index: -1; /* Coloca o vídeo abaixo de outros elementos */
+        }
+
+        /* Estilos para o texto centralizado */
+        .texto-centralizado {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #dfd2d2;
+            font-size: 50px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            font-family: 'Lora', serif; /* Garante que o texto de "Bem-vindo" use a fonte Lora */
+        }
+
+        /* Estilos para o link "Entrar" */
+        .entrar-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: rgb(179, 179, 17);
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.2s;
+            font-family: 'Lora', serif; /* Garante que o link de "Entrar" use a fonte Lora */
+        }
+
+        /* Efeito de hover no link */
+        .entrar-link:hover {
+            background-color: rgba(169, 146, 11, 0.353);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Vídeo de introdução em loop -->
+    <video autoplay muted loop>
+        <source src="video/video.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+
+    <!-- Texto centralizado com o link "Entrar" -->
+    <div class="texto-centralizado">
+        <p>Bem-vindo</p>
+        <a href="portfolio.html" class="entrar-link">Entrar</a>
+    </div>
+
+</body>
+</html>
